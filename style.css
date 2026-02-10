@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #efe6de;
+    color: #9a0002;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color:#9a0002;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+nav {
+    text-align: center;
+    background-color: #9a0002;
+    padding: 10px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+    margin: 10px;
+    padding: 0px;
+}
+
+nav ul li a {
+    color: #efe6de;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    color: #9a0002;
+}
+
+.header-texto {
+    max-width: 60%;
+}
+
+.header-imagem img {
+    margin: 60px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+section {
+    margin: 20px;
+    padding: 80px;
+}
+
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+section a {
+    color: #efe6de;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+.sobre {
+    background-color: #9a0002;
+    border-radius: 10px;
+    color: #efe6de;
+}
+.sobre h2 {
+    color: #efe6de;
+}
+
+.contatos {
+    background-color: #9a0002;
+    color: #efe6de;
+    padding: 20px;
+    margin: 0px;
+}
+
+.contatos h2 {
+    color: #efe6de;
+}
+
+.conhecimentos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: left;
+}
+
+.texto-conhecimentos h2 {
+    margin-bottom: 8px;
+}
+
+.btn-certificados {
+    background-color: #9a0002;
+    color: #efe6de;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+    display: block;        
+    margin-right: 0;        
+    margin-left: auto;
+}
+
+.btn-certificados:hover {
+    background-color: #9a0002;
+}
+
+@media (max-width: 600px) {
+    .conhecimentos {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
