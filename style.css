@@ -6,7 +6,15 @@ body {
     padding: 0;
 }
 
-h1, h2 {
+
+h1 {
+    color: #9a0002;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+}
+h2 {
     color:#9a0002;
     text-align: left;
     margin-top: 20px;
@@ -16,7 +24,9 @@ h1, h2 {
 }
 
 nav {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #9a0002;
     padding: 10px;
 }
@@ -25,6 +35,16 @@ nav {
     position: sticky;
     top: 0;
 }
+
+nav h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #efe6de;
+    margin: 0px;
+    padding: 0px;
+    font-size: 24px;
+    text-align: left;
+    padding: 20px 40px;
+} 
 
 nav ul {
     list-style: none;
@@ -49,25 +69,25 @@ nav ul li a:hover {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+   
     padding: 40px;
     color: #9a0002;
 }
 
 .header-texto {
     max-width: 60%;
+    font-size: 18px;
 }
 
 .header-imagem img {
-    margin: 60px;
-    width: 350px;
-    height: 350px;
+    margin: 80px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     object-fit: cover;
-
 }
 section {
-    margin: 20px;
+    margin: 100px;
     padding: 80px;
 }
 
@@ -91,6 +111,7 @@ section a:hover {
     background-color: #9a0002;
     border-radius: 10px;
     color: #efe6de;
+    font-size: 40px;
 }
 .sobre h2 {
     color: #efe6de;
@@ -105,28 +126,39 @@ section a:hover {
 
 .contatos h2 {
     color: #efe6de;
+    text-align: center;
 }
+
+.conteudo-contatos {
+    display: flex;
+    margin: 10px;
+    padding: 10px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: space-between;
+}
+
 
 .conhecimentos {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 30px;
+    gap: 40px;
     text-align: left;
 }
 
 .texto-conhecimentos h2 {
     margin-bottom: 8px;
+    font-size: 50px;
 }
 
 .btn-certificados {
+    text-align: right;
     background-color: #9a0002;
     color: #efe6de;
-    padding: 10px 20px;
+    padding: 10px 50px;
     border-radius: 5px;
-    text-decoration: none;
-    
-    display: block;        
+    text-decoration: none;       
     margin-right: 0;        
     margin-left: auto;
 }
@@ -135,9 +167,10 @@ section a:hover {
     background-color: #9a0002;
 }
 
-@media (max-width: 600px) {
-    .conhecimentos {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+
+footer {
+    background-color: #9a0002;
+    color: #efe6de;
+    text-align: center;
+    padding: 20px;
 }
